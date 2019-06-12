@@ -1,6 +1,8 @@
 package enmime_test
 
 import (
+	"bytes"
+	"fmt"
 	"testing"
 
 	"github.com/jhillyerd/enmime"
@@ -970,4 +972,21 @@ func TestChardetFailure(t *testing.T) {
 		test.ComparePart(t, p, wantp)
 		test.ContentEqualsString(t, p.Content, expectedContent)
 	})
+}
+
+func TestDeleteChild(t *testing.T) {
+	// r := test.OpenTestData("parts", "bin-attach.raw")
+	r := test.OpenTestData("mail", "attachment.raw")
+	env, err := enmime.ReadEnvelope(r)
+	if err != nil {
+		panic(err)
+	}
+
+	attch := env.Attachments
+	for _, att := range attch {
+		env.Root.DeleteChild(att)
+		var wr bytes.Buffer
+		env.Root.Encode(&wr)
+		fmt.Printf("%v\n", string(wr.Bytes()))
+	}
 }

@@ -86,6 +86,27 @@ func (p *Part) AddChild(child *Part) {
 	}
 }
 
+func (p *Part) DeleteChild(child *Part) {
+	if p == child {
+		// cannot remove itself
+		return
+	}
+	if p != nil {
+		// if child has no parent, delete not possible
+		if child.Parent == nil {
+			return
+		}
+		current := p.FirstChild
+		for c := current; c != nil; c = current.NextSibling {
+			if c.PartID == child.PartID {
+				current.NextSibling = nil
+				break
+			}
+			current = c
+		}
+	}
+}
+
 // TextContent indicates whether the content is text based on its content type.  This value
 // determines what content transfer encoding scheme to use.
 func (p *Part) TextContent() bool {
