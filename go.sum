@@ -6,6 +6,8 @@ github.com/jaytaylor/html2text v0.0.0-20180606194806-57d518f124b0 h1:xqgexXAGQgY
 github.com/jaytaylor/html2text v0.0.0-20180606194806-57d518f124b0/go.mod h1:CVKlgaMiht+LXvHG173ujK6JUhZXKb2u/BQtjPDIvyk=
 github.com/jhillyerd/enmime v0.5.0 h1:0U3mdCFsFsdQcuztie8g+eQgZ2GhtVCun8AJArOqdzc=
 github.com/jhillyerd/enmime v0.5.0/go.mod h1:/bb6lwXIWgsVnrO4uuLg8rBVqidJYeG9I34d/WfWurg=
+github.com/jhillyerd/enmime v0.6.0 h1:FeypffI/uD1xt+Csd7gfD7mYx1h+qjgGlcI/ko5+LsI=
+github.com/jhillyerd/enmime v0.6.0/go.mod h1:lwWyVhHVBdmzXx3wtRTmpIdNEJyZ85LJuVqZHVK/Rlo=
 github.com/mattn/go-runewidth v0.0.3 h1:a+kO+98RDGEfo6asOGMmpodZq4FNtnGP54yps8BzLR4=
 github.com/mattn/go-runewidth v0.0.3/go.mod h1:LwmH8dsx7+W8Uxz3IHJYH5QSwggIsqBzpuz5H//U1FU=
 github.com/olekukonko/tablewriter v0.0.0-20180912035003-be2c049b30cc h1:rQ1O4ZLYR2xXHXgBCCfIIGnuZ0lidMQw2S5n1oOv+Wg=

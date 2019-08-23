@@ -14,7 +14,7 @@ import (
 	"time"
 
 	"github.com/gogs/chardet"
-	"github.com/jhillyerd/enmime/internal/coding"
+	"github.com/igorrendulic/enmime/internal/coding"
 	"github.com/pkg/errors"
 )
 

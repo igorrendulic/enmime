@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/jhillyerd/enmime"
-	"github.com/jhillyerd/enmime/internal/test"
+	"github.com/igorrendulic/enmime"
+	"github.com/igorrendulic/enmime/internal/test"
 )
 
 func TestPlainTextPart(t *testing.T) {

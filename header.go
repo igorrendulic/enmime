@@ -10,7 +10,7 @@ import (
 	"net/textproto"
 	"strings"
 
-	"github.com/jhillyerd/enmime/internal/coding"
+	"github.com/igorrendulic/enmime/internal/coding"
 	"github.com/pkg/errors"
 )
 

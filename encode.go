@@ -10,8 +10,8 @@ import (
 	"sort"
 	"time"
 
-	"github.com/jhillyerd/enmime/internal/coding"
-	"github.com/jhillyerd/enmime/internal/stringutil"
+	"github.com/igorrendulic/enmime/internal/coding"
+	"github.com/igorrendulic/enmime/internal/stringutil"
 )
 
 // b64Percent determines the percent of non-ASCII characters enmime will tolerate before switching
@@ -39,7 +39,7 @@ func (p *Part) Encode(writer io.Writer) error {
 	p.encodeHeader(b)
 	if len(p.Content) > 0 {
 		b.Write(crnl)
-		if err := p.encodeContent(b, cte); err != nil {
+		if err := p.encodeContent(b, cte); err != nil { 
 			return err
 		}
 	}
