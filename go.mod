@@ -1,4 +1,4 @@
-module github.com/jhillyerd/enmime
+module github.com/igorrendulic/enmime
 
 require (
 	github.com/go-test/deep v1.0.1
